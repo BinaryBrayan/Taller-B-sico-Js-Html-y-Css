@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Alumnos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Registro de Alumnos</h1>
+        <form id="alumnoForm">
+            <div>
+                <label for="identificacion">Identificación:</label>
+                <input type="text" id="identificacion" required>
+            </div>
+            <div>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+            <div>
+                <label for="codigo">Código:</label>
+                <input type="text" id="codigo" required>
+            </div>
+            <div>
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento" required>
+            </div>
+            <div>
+                <label for="proyectoCurricular">Proyecto Curricular:</label>
+                <select id="proyectoCurricular" required>
+                    <option value="">Selecciona un proyecto curricular</option>
+                    <option value="Sistemas">Sistemas</option>
+                    <option value="Catastral">Catastral</option>
+                    <option value="Industrial">Industrial</option>
+                    <option value="Electrica">Electrica</option>
+                </select>
+            </div>
+            <button type="submit" id="enviarBtn">Enviar Alumno</button>
+        </form>
+        <div id="resultado"></div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
